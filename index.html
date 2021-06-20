@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<title>송영욱 포트폴리오</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+	crossorigin="anonymous">
+
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+<link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Do+Hyeon|Jua|Nanum+Gothic|Sunflower:300" rel="stylesheet">
+<!-- Core theme CSS (includes Bootstrap)-->
+<link href="css/styles.css" rel="stylesheet" />
+</head>
+<style>
+	body{font-family: 'Nanum Gothic', sans-serif;}
+	
+	.material-icons.md-18 {font-size : 18px;}
+	.material-icons.md-24 {font-size : 24px;}
+	.material-icons.md-36 {font-size : 36px;}
+	.material-icons.md-48 {font-size : 48px;}
+
+#fabio {
+background:url("https://images.velog.io/images/wook4506/post/a2dfa8b9-e70e-41dc-ad96-3afa84bd76c9/marguerite-5959944.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+width: 100%;
+height: 100%;
+min-height: 100%;
+}
+
+#bg1{
+background:url("https://images.velog.io/images/wook4506/post/d7aca4c5-b397-4b6f-9aeb-d896be7544f9/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202021-06-09%20%EC%98%A4%ED%9B%84%205.09.54.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+width: 100%;
+height: 100%;
+}
+
+#bg2{
+background:url("https://images.velog.io/images/wook4506/post/f842b2b1-6cba-49b5-aca4-ea4c91079695/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202021-06-09%20%EC%98%A4%ED%9B%84%205.10.04.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+width: 100%;
+height: 100%;
+}
+
+#bg3{
+background:url("https://images.velog.io/images/wook4506/post/47db2b0d-7381-4495-b1de-ab8e3ac79785/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202021-06-09%20%EC%98%A4%ED%9B%84%205.10.13.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+width: 100%;
+height: 100%;
+}
+</style>
+
+<body>
+
+<div id="fabio">
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light mb-3 ml-3">
+	  <div class="container-fluid">
+	    <a class="navbar-brand fw-bold" href="#" style = "font-size:40px; color:#ffd700; font-family: 'Sunflower', sans-serif;">송영욱의 포트폴리오</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+	      <ul class="navbar-nav mb-2 mb-lg-0">
+	        <li class="nav-item">
+	          <a class="nav-link active fw-bold" style = "font-size:20px;" aria-current="page" href="#">Home</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link active fw-bold" style = "font-size:20px;" aria-current="page" href="#anchor1">About Me</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link active fw-bold" style = "font-size:20px;" aria-current="page" href="#anchor2">Career & License</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link active fw-bold" style = "font-size:20px;" aria-current="page" href="#anchor3">iOS Developer</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link active fw-bold" style = "font-size:20px;" aria-current="page" href="#anchor4">Portfolio</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link active fw-bold" style = "font-size:20px;" aria-current="page" href="#anchor5">Contact</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link active fw-bold" style = "font-size:20px;" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">질문하기</a>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+	
+	<!-- 질문 모달 -->
+	<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="loginModalLabel"><i class="fas fa-sign-out-alt"></i> 질문을 해주세요!</h5>
+		        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		      </div>
+		      <div class="modal-body">
+		      	<input type="text" class = "form-control" placeholder="질문을 입력하세요!" style="width:450px;height:200px;font-size:10px;">
+		        <hr/>
+				<div class = "row g-3">
+					<div class = "col">
+						<input type = "text" class = "form-control" placeholder = "FirstName">
+					</div>
+					<div class = "col">
+						<input type = "text" class = "form-control" placeholder = "LastName">
+					</div>
+				</div>
+				<div class="form-check mt-3">
+				  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+				  <label class="form-check-label" for="flexCheckDefault">사용자 개인정보 수집에 동의합니다.</label>
+				</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+		        <button type="button" class="btn btn-primary">제출하기</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	
+		<div class = "container">
+			<div class = "row">
+				<div class = "col" style="margin-top:120px; margin-bottom:30px;">
+                      <h4 class = "display-2 fw-bold">Welcome</h4>
+                      <h4 class = "display-3 fw-bold" style = "display:inline; color:#fa8072;">Song's </h4>
+                      <h4 class = "display-4 fw-bold" style = "display:inline;">Portfolio!</h4>
+                      <p class="text-secondary mb-1">iOS Developer</p>
+                      <p class="font-size-sm" style="font-family: 'Nanum Gothic', sans-serif;">유연한 창의성과 사용자 요구사항에 맞춰 변화하는 흐름을 이해하는 앱개발자</p>
+				</div>
+			</div>
+			
+			<div class = "row mb-5 my-5">
+				<div class = "col-lg-3">
+					<img src="https://images.velog.io/images/wook4506/post/b47b9656-0b73-4eb2-9153-750e72d6a474/IMG_0243.JPG" class="img-thumbnail my-3" alt="Admin" width="250" height="250">
+
+				</div>
+				<div class = "col-lg-9" style="padding-top:220px;">
+					<h4>DEVELOPER</h4>
+					<h1 class = "fw-bold">Young-wook Song</h1>
+					<p class="text-secondary">Ilsan, Republic of Korea</p>
+				</div>
+			</div>
+		</div>
+		
+</div>
+		
+	
+
+<div style = "background-color:#F0FFF0;">
+		<div class = "container" id = "anchor1">
+			<div class = "row">
+				<h2 class = "display-4" style = "margin-top:30px;">About Me</h2>
+			</div>
+			
+			<div class = "row">
+				<div class = "col-lg-4">
+					<div class="card bg-light my-4">
+		                <div class="card-body">
+		                  <div class=" flex-column align-items-center text-center">
+		                    <img src="https://images.velog.io/images/wook4506/post/9ec06104-dbbe-4e94-8093-a6d632a00f4b/IMG_7097.jpg" class="img-thumbnail my-3 rounded-circle" alt="Admin" width="250" height="250">
+		                    <div>
+		                      <div class="row">
+			                    <div class="col-4">
+			                      <h6 class="mb-0 ">이름</h6>
+			                    </div>
+			                    <div class="col-8 fw-bold">
+			                      송영욱
+			                    </div>
+			                  </div>
+			                  <hr>
+			                  <div class="row">
+			                    <div class="col-4">
+			                      <h6 class="mb-0">생년월일</h6>
+			                    </div>
+			                    <div class="col-8 fw-bold">
+			                      1998.08.20
+			                    </div>
+			                  </div>
+			                  <hr>
+			                  <div class="row">
+			                    <div class="col-4">
+			                      <h6 class="mb-0">연락처</h6>
+			                    </div>
+			                    <div class="col-8 fw-bold">
+			                      010-5092-0683
+			                    </div>
+			                  </div>
+			                  <hr>
+			                  <div class="row">
+			                    <div class="col-4">
+			                      <h6 class="mb-0">이메일</h6>
+			                    </div>
+			                    <div class="col-8 fw-bold">
+			                      wook4506@naver.com
+			                    </div>
+			                  </div>
+			                  <hr>
+			                  <div class="row">
+			                    <div class="col-4">
+			                      <h6 class="mb-0">주소</h6>
+			                    </div>
+			                    <div class="col-8 fw-bold">
+			                      경기 고양시 일산서구
+			                    </div>
+			                  </div>
+			                  <hr>
+		                    </div>
+		                  </div>
+		                </div>
+		              </div>
+				</div>
+				
+				<div class = "col-lg-8 mt-4 mb-5">
+					<h2 class = "display-6 mt-5 ms-5 fw-bold" style = "margin-top:100px; display:inline; font-size:40px">•</h2>
+					<h2 class = "display-5 mt-5 ms-2 fw-bold" style = "display:inline; color:#ff4500;">항상</h2>
+					<h2 class = "display-7 mt-5 ms-2" style = "display:inline;"> 배운다는 마음가짐으로!</h2>
+					
+					<div class="row mt-2">
+						<div class = "col-1">
+						</div>
+						
+						<div class = "col-11">
+							<p class = "font-size-sm ms-5">충분히 아는 내용이라도 모든 일에는 항상 배운다는 초심의 마음가짐을 가집니다.</p>
+						</div>
+					</div>
+					
+					
+					<h2 class = "display-6 mt-5 ms-5 fw-bold" style = "display:inline; font-size:40px">•</h2>
+					<h2 class = "display-5 mt-5 ms-2 fw-bold" style = "display:inline; color:#ff4500;">항상</h2>
+					<h2 class = "display-7 mt-5 ms-2" style = "display:inline;"> 책임감 있게!</h2>
+					
+					<div class="row mt-2">
+						<div class = "col-1">
+						</div>
+						
+						<div class = "col-11">
+							<p class = "font-size-sm ms-5">주어진 일은 항상 최선을 다해 끝까지 다 해냅니다.</p>
+						</div>
+					</div>
+					
+					
+					<h2 class = "display-6 mt-5 ms-5 fw-bold" style = "display:inline; font-size:40px">•</h2>
+					<h2 class = "display-5 mt-5 ms-2 fw-bold" style = "display:inline; color:#ff4500;">항상</h2>
+					<h2 class = "display-7 mt-5 ms-2" style = "display:inline;"> 독창적이고 창의적이게!</h2>
+					
+					<div class="row mt-2">
+						<div class = "col-1">
+						</div>
+						
+						<div class = "col-11">
+							<p class = "font-size-sm ms-5">나만의 결과물을 만들어 내기 위해 항상 노력하고 최선을 다합니다.</p>
+						</div>
+					</div>
+					
+					
+					<h2 class = "display-6 mt-5 ms-5 fw-bold" style = "display:inline; font-size:40px">•</h2>
+					<h2 class = "display-5 mt-5 ms-2 fw-bold" style = "display:inline; color:#ff4500;">항상</h2>
+					<h2 class = "display-7 mt-5 ms-2" style = "display:inline;"> 겸손하며 배려하는!</h2>
+					
+					<div class="row mt-2">
+						<div class = "col-1">
+						</div>
+						
+						<div class = "col-11">
+							<p class = "font-size-sm ms-5 mb-3">자만심은 내려놓고 항상 겸손하며 누군가에게 도움이 되도록 노력합니다.</p>
+						</div>
+					</div>
+					
+					
+					<hr class = "ms-5 mt-1">
+					
+					<div class = "container my-2 text-center">
+						<div class = "row" style = "margin-top:15px">
+							<div class = "col-3">
+								<img src="https://images.velog.io/images/wook4506/post/5256f0ba-5555-4cf9-a209-edd4b07231ea/%EC%8A%A4%EC%9C%84%ED%94%84%ED%8A%B8.jpg" class="img-thumbnail rounded-circle" alt="Admin" width="80" height="80">
+								<h3 style = "color:#777">Swift</h3>
+								<p><a class = "btn btn-secondary" href = "https://www.apple.com/kr/swift/">View Detail</a></p>
+							</div>
+							
+							<div class = "col-3">
+								<img src="https://images.velog.io/images/wook4506/post/c679d6ff-b18f-4cb7-b602-40d891c8d4d6/logo-python.png" class="img-thumbnail rounded-circle" alt="Admin" width="80" height="80">
+								<h3 style = "color:#777">Python</h3>
+								<p><a class = "btn btn-secondary" href = "https://www.python.org">View Detail</a></p>
+							</div>
+							
+							<div class = "col-3">
+								<img src="https://images.velog.io/images/wook4506/post/13df7810-26fc-4d68-b757-8af46be0d152/jb-featured-image-html5.jpg" class="img-thumbnail rounded-circle" alt="Admin" width="77" height="77">
+								<h3 style = "color:#777">Html</h3>
+								<p><a class = "btn btn-secondary" href = "https://ko.wikipedia.org/wiki/HTML">View Detail</a></p>
+							</div>
+							
+							<div class = "col-3">
+								<img src="https://images.velog.io/images/wook4506/post/b20b8a64-f7c8-4a6c-ba82-b36dbad20005/%EC%9E%90%EB%B0%94.png" class="img-thumbnail rounded-circle" alt="Admin" width="73" height="73">
+								<h3 style = "color:#777">java, c</h3>
+								<p><a class = "btn btn-secondary" href = "https://ko.wikipedia.org/wiki/자바_(프로그래밍_언어)">View Detail</a></p>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+</div>
+
+<div style="background-color:#FFE4E1;">
+		<div class = "container" id = "anchor2">
+			<div class = "row">
+				<h2 class = "display-4" style = "margin-top:30px;">Career & License</h2>
+			</div>
+			
+			<div class = "row mb-5 ms-5">
+				<div class = "col-lg-9">
+					<h2 class = "display-6 my-4 fw-bold">학력</h2>
+					<div class = "row">
+						<div class = "col-5" style = "border-right: 1px solid gray;">
+							<p class = "font-size-sm ms-5">•세화유치원 졸업</p>
+							<p class = "font-size-sm ms-5">•신촌초등학교 졸업</p>
+							<p class = "font-size-sm ms-5">•오마중학교 졸업</p>
+						</div>
+						
+						<div class = "col-7">
+							<p class = "font-size-sm ms-5">•일산대진고등학교 졸업</p>
+							<p class = "font-size-sm ms-5">•한양대 ERICA ICT융합학부 입학</p>
+							<p class = "font-size-sm ms-5">•ICT융합학부 미디어테크놀러지 3학년</p>
+						</div>
+					</div>
+					
+					<h2 class = "display-6 my-4 fw-bold">경력사항</h2>	
+					<div class = "row">
+						<div class = "col-5" style = "border-right: 1px solid gray;">
+							<p class = "font-size-sm ms-5">•2020.03 123의무경찰대 만기전역</p>
+							<p class = "font-size-sm ms-5">•2020.05 SW아이디어톤 장려</p>
+							<p class = "font-size-sm ms-5">•2020.11 강한인제융합캠프 참가</p>
+						</div>
+						
+						<div class = "col-7">
+							<p class = "font-size-sm ms-5">•2020.12 일리소프트 인턴 과정</p>
+							<p class = "font-size-sm ms-5">•2021.01 교내 머신러닝 학회 주최</p>
+						</div>
+					</div>
+					
+					<h2 class = "display-6 my-4 fw-bold">자격증</h2>	
+					<div class = "row">
+						<div class = "col-5">
+							<p class = "font-size-sm ms-5">•2019.08 ITQ OA 마스터</p>
+							<p class = "font-size-sm ms-5">•2020.03 워드 프로세스</p>
+							<p class = "font-size-sm ms-5">•2020.07 정보처리기능사</p>
+						</div>
+						
+						<div class = "col-7">
+						</div>
+					</div>	
+				</div>
+				
+				<div class = "col-lg-3 mb-5">
+					<img src="https://images.velog.io/images/wook4506/post/29966133-a696-47f5-93d5-42b4b291b912/IMG_1108.JPG" class="img-thumbnail my-3" alt="Admin" width="200" height="200">
+					<img src="https://images.velog.io/images/wook4506/post/543739e5-b71c-4ccd-91e3-8d25a58d5959/IMG_4244.JPG" class="img-thumbnail my-3" alt="Admin" width="200" height="200">
+					<img src="https://images.velog.io/images/wook4506/post/a1ad9b14-2404-42e4-99fd-4520a4d9df5d/IMG_1074.jpg" class="img-thumbnail my-4" alt="Admin" width="200" height="200">
+				</div>
+			</div>
+		</div>
+</div>
+
+<div>
+	<div class = "container" id = "anchor3">
+		<div class = "row">
+			<h2 class = "display-4">About iOS Developer</h2>
+		</div>
+		
+		<h5 class = "my-2 ms-1 fw-bold">제가 공부중인 iOS, Swift에 대해 잠깐 설명을 드리자 합니다!</h5>	
+		
+		
+		<div class = "row">
+			<div class = "col-md-1">
+			</div>
+			
+			<div class = "col-md-10 text-center align-items-center">
+				<img src="https://images.velog.io/images/wook4506/post/5256f0ba-5555-4cf9-a209-edd4b07231ea/%EC%8A%A4%EC%9C%84%ED%94%84%ED%8A%B8.jpg" width="150" height="150">
+				<img class = "mb-2 mt-2"src="https://images.velog.io/images/wook4506/post/82e7758e-acf4-4fd4-97ff-714830bf2aec/IMG_7098.jpg" width="100" height="100">
+				<p class = "lead">Swift. 누구나 놀라운 앱을 만들 수 있게 해주는 강력한 개방형 언어. Swift는 Apple이 iOS, Mac, Apple TV 그리고 Apple Watch 앱 개발용으로 만든 강력하고 직관적인 프로그래밍 언어입니다. Swift는 누구나 쉽게 구할 수 있습니다.</p>
+				<img src="https://images.velog.io/images/wook4506/post/b890cf79-995d-46e9-af0f-956c950ae2b0/%EB%A7%A5%EB%B6%81.jpg" width="700" height="420">
+				<p class = "lead mb-5"> Swift는 누구에게나 개방되어 있는 무료로 제공되는 오픈 소스 언어입니다. Apache 2.0 오픈 소스 라이선스만 있다면 개발자, 교육자, 학생 등 누구에게나 열려있죠. Apple은 iOS, macOS, watchOS, tvOS, 그리고 Linux용 코드를 컴파일할 수 있는 macOS 및 Linux용 바이너리를 제공하고 있습니다. Swift가 더욱더 강력한 언어로 거듭날 수 있도록 커뮤니티를 개설해 사용자들이 Swift 소스 코드 개발에 직접 참여할 수 있도록 했습니다.</p>
+			</div>
+			
+			<div class = "col-md-1">
+			</div>
+	
+		</div>
+	</div>
+</div>
+
+<div style="background-color:#FDF5E6;">
+		<div class = "container" id = "anchor4">
+		
+			<div class = "row">
+				<h2 class = "display-4" style = "margin-top:30px;">My Portfolio</h2>
+			</div>
+		
+				<h5 class = "display-4 my-2 text-center fw-bold">수행한 프로젝트</h5>
+				<p class = "text-center">대학 입학 후부터 진행했던 프로젝트들입니다.</p>	
+				<hr/>
+				
+				<div class="row">
+					<div class="col-md-3">
+						<div class="card my-5">
+		                <div class="card-body">
+		                  <div class="d-flex flex-column align-items-center text-center">
+		                    <img src="https://images.velog.io/images/wook4506/post/32a8f791-b840-4c9e-befd-1b380402006c/unnamed.png" alt="Admin" class="rounded-circle" width="250">
+		                    <div class="mt-3">
+		                      <h4>신조어 사전</h4>
+		                      <p class="text-secondary mb-1">개발 언어 : Python</p>
+		                      <p class="text-muted font-size-sm">개발 일시 : 2017.06
+		                      <p class="text-muted font-size-sm">요약 : 1학년 1학기 프로그래밍 기초 수업 팀플. </p>
+		                      <button class="btn btn-primary" onclick="location.href='https://github.com/youngwookSong/1-1_programming_dict' ">github!</button>
+		                      <button class="btn btn-outline-primary">Detail</button>
+		                    </div>
+		                  </div>
+		                </div>
+		              </div>
+					</div>
+					
+					<div class="col-md-3">
+						<div class="card my-5">
+		                <div class="card-body">
+		                  <div class="d-flex flex-column align-items-center text-center">
+		                    <img src="https://images.velog.io/images/wook4506/post/5ed2449b-266a-477e-af5c-21c30819ddfa/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202021-06-20%20%EC%98%A4%EC%A0%84%202.51.23.png" alt="Admin" class="rounded-circle" width="267">
+		                    <div class="mt-3">
+		                      <h4>암호 관리 어플</h4>
+		                      <p class="text-secondary mb-1">개발 툴 : MIT App Inventer</p>
+		                      <p class="text-muted font-size-sm">개발 일시 : 2020.12</p>
+		                      <p class="text-muted font-size-sm">요약 : 2학년 2학기 모바일 앱 개발 수업 개인 프로젝트</p>
+		                      <button class="btn btn-primary" onclick="location.href='https://github.com/youngwookSong/2-2_App_programming_Lock' ">github!</button>
+		                      <button class="btn btn-outline-primary">Detail</button>
+		                    </div>
+		                  </div>
+		                </div>
+		              </div>
+					</div>
+					
+					<div class="col-md-3">
+						<div class="card my-5">
+		                <div class="card-body">
+		                  <div class="d-flex flex-column align-items-center text-center">
+		                    <img src="https://images.velog.io/images/wook4506/post/a7b3b93d-f16a-4fdb-aa1e-31f02e9c6796/%EC%A0%9C%EB%AA%A9%20%EC%97%86%EB%8A%94%20%EB%94%94%EC%9E%90%EC%9D%B8.png" alt="Admin" class="rounded-circle" width="250">
+		                    <div class="mt-3">
+		                      <h4>나만의 메모장</h4>
+		                      <p class="text-secondary mb-1">개발 언어 : Swift</p>
+		                      <p class="text-muted font-size-sm">개발 일시 : 2021.04</p>
+		                      <p class="text-muted font-size-sm">요약 : 내가 처음부터 끝까지 직접 만들어본 첫번째 iOS 앱</p>
+		                      <button class="btn btn-primary" onclick="location.href='https://github.com/youngwookSong/memo_proj' ">github!</button>
+		                      <button class="btn btn-outline-primary">Detail</button>
+		                    </div>
+		                  </div>
+		                </div>
+		              </div>
+					</div>
+					
+					<div class="col-md-3">
+						<div class="card my-5">
+		                <div class="card-body">
+		                  <div class="d-flex flex-column align-items-center text-center">
+		                    <img src="https://images.velog.io/images/wook4506/post/d710b8b9-8908-4766-b6ba-dde6bb7ebb59/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202021-06-20%20%EC%98%A4%EC%A0%84%202.55.19.png" alt="Admin" class="rounded-circle" width="267">
+		                    <div class="mt-3">
+		                      <h4>머더라</h4>
+		                      <p class="text-secondary mb-1">개발 언어 : Swift</p>
+		                      <p class="text-muted font-size-sm">개발 일시 : 2021.05</p>
+		                      <p class="text-muted font-size-sm">요약 : 3학년 1학기 창업 캡스톤 노인 교육 플랫폼 앱 구현</p>
+		                      <button class="btn btn-primary" onclick="location.href='https://github.com/youngwookSong/Modora' ">github!</button>
+		                      <button class="btn btn-outline-primary">Detail</button>
+		                    </div>
+		                  </div>
+		                </div>
+		              </div>
+					</div>
+				</div>
+			</div>
+</div>
+
+<div style="background-color:#EBFBFF;">
+	<div class="container" id = "anchor5">
+
+		<div class = "row">
+			<h2 class = "display-4" style = "margin-top:30px;">Contact</h2>
+		</div>
+		
+		<h5 class = "display-4 my-2 text-center fw-bold">Contact</h5>
+		<p class = "text-center">항상 즐거운 마음으로 모든 일을 수행하는 iOS 앱 개발자가 되겠습니다.</p>	
+		<hr/>
+		
+		<div class = "row">
+			<div class = "col-md-2">
+			</div>
+			
+			<div class = "col-md-8 text-center ">
+				
+			</div>
+			
+			<div class = "col-md-2">
+			</div>
+		</div>
+		
+		
+		<div class = "row mb-5">
+			<div class = "col-md-6 my-5">
+				<h2 class = "display-4" style = "margin-top:30px; text-align:right;">귀중한 시간 내주셔서</h2>
+				<h2 class = "display-4 fw-bold" style = "margin-top:30px; text-align:right; color:#fa8072;">감사합니다!</h2>
+			</div>
+			
+			<div class = "col-md-6 align-items-center text-center">
+				<img src="https://images.velog.io/images/wook4506/post/82e7758e-acf4-4fd4-97ff-714830bf2aec/IMG_7098.jpg" alt="Admin" class="rounded-circle my-5" width="267">
+			</div>
+		</div>
+	
+	<div class = "row">
+		<div class = "col-4 text-center">
+			<span class="material-icons md-48">phone</span>
+			<h6 class = " my-3 text-center fw-bold">tel : 010-5092-0683</h6>
+		</div>
+		
+		<div class = "col-4 text-center">
+			<span class="material-icons md-48">email</span>
+			<h6 class = " my-3 text-center fw-bold">e-mail : wook4506@naver.com</h6>
+		</div>
+		
+		<div class = "col-4 text-center">
+			<span class="material-icons md-48">rss_feed</span>
+			<h6 class = " my-3 text-center fw-bold">velog : https://velog.io/@wook4506</h6>
+		</div>
+	</div>
+	
+</div>
+<br>
+</div>
+
+
+
+<footer class = "text-center" style = "background-color:#fa8072;padding-top:60px; padding-bottom:10px;">
+	<span class="material-icons">facebook</span>
+	<span class="material-icons">public</span>
+	<span class="material-icons">mail</span>
+	<span class="material-icons">notifications</span>
+	<p>Coptright  &copy; Song in 2021</p>
+	<p>made by Song</p>
+</footer>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>
